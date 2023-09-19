@@ -17,19 +17,19 @@ public class WaterBottleTest {
     }
 
     @Test
-    public void drinkRemoves10Volume() {
+    public void drink10Volume() {
         waterBottle.drink();
         assertEquals(90, waterBottle.getVolume());
     }
 
     @Test
-    public void emptySetsVolumeTo0() {
+    public void emptyVolume() {
         waterBottle.empty();
         assertEquals(0, waterBottle.getVolume());
     }
 
     @Test
-    public void fillSetsVolumeTo100() {
+    public void fillVolume() {
         waterBottle.empty();
         waterBottle.fill();
         assertEquals(100, waterBottle.getVolume());
